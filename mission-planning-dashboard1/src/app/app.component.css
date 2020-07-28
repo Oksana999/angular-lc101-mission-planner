@@ -1,4 +1,10 @@
 .box {
   display: flex;
+  justify-content: space-evenly;
   padding: 10px;
+}
+h1 {
+  color: #f7bee9;
+  font-weight: bold;
+  font-size: 45px;
 }

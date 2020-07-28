@@ -1,0 +1,18 @@
+.crew {
+  display: block;
+  text-align: left;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+  padding: 35px;
+  background-color: blueviolet;
+}
+
+h2 {
+  color: cornflowerblue;
+  font-size: 32px;
+}
+li {
+  color: bisque;
+  font-size: 20px;
+  font-family: Consolas;
+}
