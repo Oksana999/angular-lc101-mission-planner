@@ -12,13 +12,11 @@
                 <button (click)="updateCandidate(member, candidateName, candidatePhoto)" type = "submit">submit</button>
             </form>
             </div>
-<!--            <button (click)="updateCandidate(member, candidateName, candidatePhoto)" type = "submit">update</button>-->
-<!--            <button (click)="update()">update</button>-->
-<!--            <span *ngIf="isUpdate; else updateBlock">-->
+
 
 
             <button (click)="deleteCandidate(member)">delete</button>
-<!--            </span>-->
+
         </li>
 
     </ul>
@@ -30,9 +28,7 @@
         <button [disabled]="isCandidateAdded()" type="submit">Submit</button>
     </form>
     <ng-template #updateBlock>
-<!--        <input  type="text" [(ngModel)]="candidateName" name="name" placeholder="name"/> <br>-->
-<!--        <input  type="text" [(ngModel)]="candidatePhoto" name="photo" placeholder="photo"/> <br>-->
-<!--        <button (click)="updateCandidate(candidate, candidateName, candidatePhoto)" type = "submit">submit</button>-->
+
     </ng-template>
 
 </div>
