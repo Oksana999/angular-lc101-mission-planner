@@ -1,7 +1,31 @@
 <div class="displayBox">
-    <h3>Possible Experiments</h3>
+    <h2>Possible Experiments</h2>
+
     <ul>
-      <li *ngFor="let experiment of experiments">{{experiment}}</li>
+      <li [class.selected]="completedExperiments.includes(experiment)" *ngFor = "let experiment of experiments"
+          (click)="addExperiments(experiment)">{{experiment}}
+         <button (click)="deleteExperiment(experiment)">delete</button>
+      </li>
     </ul>
+    <input #newExperiment (keyup.enter) = "addNewExperiment(newExperiment.value); newExperiment.value =''"
+           type = 'text' placeholder="New Experiment"/>
+    <button (click)="addNewExperiment(newExperiment.value); newExperiment.value =''">Add</button>
 </div>
 <hr>
+<div class = "displayBox">
+    <h2>Completed Experiments</h2>
+
+    <span *ngIf="completedExperiments.length !== experiments.length; else elseBlock">
+        <ol>
+         <li *ngFor="let completed of completedExperiments">{{completed}}</li>
+
+        </ol>
+    </span>
+        <ng-template #elseBlock>
+            <h1>Great Job!</h1>
+            <img [src] = "show"/>
+
+        </ng-template>
+
+
+</div>

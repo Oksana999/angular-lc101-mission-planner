@@ -1,16 +1,49 @@
 .displayBox {
-    height: 275px;
-    width: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: left;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    height: inherit;
+    width: 375px;
+    background-color: #f59a7a;
+    border: solid 5px #3063f0;
+    border-radius: 10px;
+    /*text-align: center;*/
+    font-size: 18px;
 }
 
 button {
     margin: 2px;
+
     cursor: pointer;
+    background-color: #c76765;
+    color: white;
 }
 
-h3 {
+button:disabled {
+    margin: 2px;
+    cursor: default;
+    background-color: #e89379;
+    color: white;
+}
+
+h2 {
     text-align: center;
 }
+
+.button-style {
+    background-color: #e89379;
+}
+
+.nearMaxMass {
+    font-style: italic;
+    color: red;
+}
+
 
 /* Add an 'active' class to style the background of the 'Add to Cargo Hold' buttons. */
 

@@ -3,8 +3,16 @@ li:hover {
 }
 
 .displayBox {
-    height: 275px;
-    width: auto;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    height: inherit;
+    width: 375px;
+    background-color: #f2aca0;
+    border: solid 5px #3063f0;
+
+    border-radius: 10px;
+    font-size: 18px;
+
 }
 
 img {
@@ -15,8 +23,35 @@ img {
     display: block;
 }
 
-h3 {
+h2 {
     text-align: center;
+}
+.selected {
+    color: #990000;
+    font-weight: bold;
+}
+.deleted {
+    color: black;
+}
+p {
+    padding-left: 20px;
+    color: #990000;
+    font-weight: bold;
+}
+input {
+    width: 180px;
+    height: 12px;
+    margin-left: 20px;
+    background-color: #cfc6c6;
+}
+button {
+    margin-left: 20px;
+    background-color: #c76765;
+    color: white;
+}
+.hidden {
+    display: none;
+
 }
 
 /* Add a 'selected' class here to style selected astronaut names a different color. */

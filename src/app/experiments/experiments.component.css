@@ -1,8 +1,43 @@
 .displayBox {
-    height: 275px;
-    width: auto;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    height: inherit;
+    width: 310px;
+    background-color: #4e87f2;
+    border: solid 5px #3063f0;
+    border-radius: 10px;
+    font-size: 18px;
+
 }
 
-h3 {
+h2 {
     text-align: center;
+}
+.selected{
+    color: #990000;
+    font-weight: bold;
+}
+img {
+    padding-left: 45px;
+    padding-bottom: 15px;
+    width: 220px;
+    height: 155px;
+}
+h1 {
+    color: #990000;
+    font-weight: bold;
+    text-align: center;
+}
+li {
+    cursor: pointer;
+}
+input {
+    width: 180px;
+    height: 15px;
+    margin-left: 20px;
+    background-color: #cfc6c6;
+}
+button {
+    background-color: #c76765;
+    color: white;
 }
